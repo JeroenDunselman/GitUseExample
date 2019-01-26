@@ -18,16 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOn-ca-Yqe">
-                                <rect key="frame" x="163" y="318" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOn-ca-Yqe">
+                                <rect key="frame" x="163" y="319" width="49" height="29"/>
                                 <state key="normal" title="Knopje"/>
                                 <connections>
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oQk-eD-IQf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a new label in a new branch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkx-3w-fBW">
+                                <rect key="frame" x="69" y="114" width="237" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZOn-ca-Yqe" firstAttribute="centerX" secondItem="nkx-3w-fBW" secondAttribute="centerX" id="AHX-Ba-UwG"/>
+                            <constraint firstItem="nkx-3w-fBW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IaS-s4-A4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZOn-ca-Yqe" secondAttribute="bottom" constant="319" id="PgN-rp-KmU"/>
+                            <constraint firstItem="nkx-3w-fBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Vln-do-fMh"/>
+                            <constraint firstItem="ZOn-ca-Yqe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ah6-hk-z97"/>
+                            <constraint firstItem="ZOn-ca-Yqe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="163" id="i6k-Ha-mgf"/>
+                            <constraint firstItem="nkx-3w-fBW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="o23-OC-6gB"/>
+                            <constraint firstItem="nkx-3w-fBW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="zLB-vf-w7t"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
